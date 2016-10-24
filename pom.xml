@@ -10,6 +10,8 @@
 	<properties>
 	    <servlet-api.version>3.1.0</servlet-api.version>
 		<jsp-api.version>2.0</jsp-api.version>
+		<jee.version>7.0</jee.version>
+		<eclipselink.version>2.6.4</eclipselink.version>
 	</properties>
 
 	<build>
@@ -45,8 +47,22 @@
 			<version>${jsp-api.version}</version>
 			<scope>provided</scope>
 		</dependency>
+		<dependency>
+			<groupId>javax</groupId>
+			<artifactId>javaee-api</artifactId>
+			<version>${jee.version}</version>
+			<scope>provided</scope>
+		</dependency>
+        <dependency>
+            <groupId>org.eclipse.persistence</groupId>
+            <artifactId>eclipselink</artifactId>
+            <version>${eclipselink.version}</version>
+			<scope>provided</scope>
+        </dependency>
 
-		<!-- other -->
+
+
+        <!-- other -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
