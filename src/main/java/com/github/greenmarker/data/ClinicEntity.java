@@ -8,14 +8,28 @@ import javax.persistence.*;
 @Entity
 @Table(name = "clinic", schema = "public", catalog = "clinic")
 public class ClinicEntity {
-    private int id;
-    private String name;
-    private String description;
-    private String address;
-    private String contact;
 
     @Id
     @Column(name = "id")
+    private int id;
+
+    @Basic
+    @Column(name = "name")
+    private String name;
+
+    @Basic
+    @Column(name = "description")
+    private String description;
+
+    @Basic
+    @Column(name = "address")
+    private String address;
+
+    @Basic
+    @Column(name = "contact")
+    private String contact;
+
+
     public int getId() {
         return id;
     }
@@ -24,8 +38,6 @@ public class ClinicEntity {
         this.id = id;
     }
 
-    @Basic
-    @Column(name = "name")
     public String getName() {
         return name;
     }
@@ -34,8 +46,6 @@ public class ClinicEntity {
         this.name = name;
     }
 
-    @Basic
-    @Column(name = "description")
     public String getDescription() {
         return description;
     }
@@ -44,8 +54,6 @@ public class ClinicEntity {
         this.description = description;
     }
 
-    @Basic
-    @Column(name = "address")
     public String getAddress() {
         return address;
     }
@@ -54,8 +62,6 @@ public class ClinicEntity {
         this.address = address;
     }
 
-    @Basic
-    @Column(name = "contact")
     public String getContact() {
         return contact;
     }

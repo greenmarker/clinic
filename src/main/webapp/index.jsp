@@ -9,10 +9,15 @@
 <html>
 <head>
     <title>Clinic</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-
     <p>Hi!</p>
-
+    <form action="Hello.do">
+        <p>Enter your name:</p>
+        <input type="text" name="name" />
+        <input type="submit" value="OK" />
+    </form>
 </body>
 </html>
