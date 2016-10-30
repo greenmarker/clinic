@@ -19,5 +19,10 @@
         <input type="text" name="name" />
         <input type="submit" value="OK" />
     </form>
+
+    <a href="stocks/quotes.xhtml">Quotes</a>
+    <br />
+    <a href="stocks/history.xhtml">History</a>
+
 </body>
 </html>

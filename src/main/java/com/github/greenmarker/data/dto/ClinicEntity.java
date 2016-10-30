@@ -1,4 +1,4 @@
-package com.github.greenmarker.data;
+package com.github.greenmarker.data.dto;
 
 import javax.persistence.*;
 
